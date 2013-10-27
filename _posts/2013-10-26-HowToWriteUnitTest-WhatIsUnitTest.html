@@ -1,0 +1,18 @@
+---
+layout: default
+title: "How to write Unit Test - What is unit test"
+published: true
+---
+
+<h2>{{ page.title }}</h2>
+<p>We have heard people talking about unit tests all the time.
+  If you watch closely, you will find these people are not only developers. They are product managers, scrum masters, QA etc. They talked on unit tests even more than developers.
+  I know people have different view or expectation on unit tests based on their role, past experience. To correct this, from today, I'd like to share my understanding of unit test into a series of articles. During the period, I will also rich these articles accordingly to the training I give in EFLabs. 
+  So what is Unit Test?
+  A Unit Test is a piece of testing code test one behavior of the logic in one function independntly and fast.
+  1. A piece of testing code
+  	Yes, what's else it should be? If the codes are written for purpose elsewise, you are not writting testing codes. 
+  	In unit test, you only need to setup objects the function has directly dependence and the minimun objects the test flow need to cover. You don't need to setup all objects the container class depends. Nor all those the testing target function needs. More objects making somthing more complex. They might pass the cases we should be able to catch if they are not there. We can't always make sure these extra objects are always irrelevant. This possibility is always there. It can be you update codes months later, or by one of team member not working on this function in the beginning. The key is test case is no longer working as we designed. If extra objects won't affect our tests, we are fine to remove them. If they will affect our cases, our cases are not properly designed. Failed case is better than false cases hiding problems.
+	In this way, <u>a general function build fully fledged testing object is a bad practice.</u>
+  2. 
+</p>
