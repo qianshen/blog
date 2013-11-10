@@ -1,0 +1,27 @@
+---
+layout: default
+title: "How to write Unit Test - What is unit test"
+published: true
+---
+
+<h2>{{ page.title }}</h2>
+<p>
+	转载于<a href="https://www.surfchen.org/archives/710">解决javac和java命令在Mac OSX终端里的乱码问题 by surfchen</a>
+	java和javac在简体中文的Mac OSX的终端(Terminal.app)环境下，默认是以GBK编码的中文输出各种诸如语法错误，数组访问越界之类的信息。
+
+但是，Mac的终端的默认编码是UTF-8，所以javac和java在未配置的情况下会输出乱码。
+
+解决方法有3个：
+
+1）指定输出的编码为UTF-8
+javac -J-Dfile.encoding=UTF-8
+
+2）输出英文
+export LC_ALL=en
+
+3）通过iconv转码
+javac something|iconv -f GBK -t UTF-8
+
+对我来说，2）是最好的方案。一是可以把这个加入到.profile里，一劳永逸；二是输出为英文的话，可以搜索到更多的相关信息，毕竟英文资料比中文多得多。
+
+</p>
