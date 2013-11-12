@@ -7,9 +7,15 @@ published: true
 <h2>{{ page.title }}</h2>
 <p>
 <span>ssh-keygen -t rsa</span>
+<br/>
 <span>scp ~/.ssh/id_rsa.pub hadoop-user@target:~/master_key</span>
+<br/>
 <span>mkdir ~/.ssh</span>
+<br/>
 <span>chmod 700 ~/.ssh</span>
+<br/>
 <span>mv ~/master_key ~/.ssh/authorized_keys</span>
+<br/>
 <span>chmod 600 ~/.ssh/authorized_keys</span>
+<br/>
 </p>
