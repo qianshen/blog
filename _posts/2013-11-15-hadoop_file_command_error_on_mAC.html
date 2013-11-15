@@ -1,0 +1,10 @@
+---
+layout: default
+title: "Hadoop File Command Error on OSX"
+published: true
+---
+<h2>{{ page.title }}</h2>
+<p>
+	Add the following line to /conf/hadoop-env.sh:
+	export HADOOP_OPTS="-Djava.security.krb5.realm=OX.AC.UK -Djava.security.krb5.kdc=kdc0.ox.ac.uk:kdc1.ox.ac.uk"
+</p> 

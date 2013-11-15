@@ -5,6 +5,7 @@ published: true
 ---
 
 <h2>{{ page.title }}</h2>
+<p>SSH use pub/private key for authentication. And key is built from certain account. Basically, we distribute pub keys to all servers that we can use one account to all of them</p>
 <p>
 <span>ssh-keygen -t rsa</span>
 <br/>
@@ -18,4 +19,5 @@ published: true
 <br/>
 <span>chmod 600 ~/.ssh/authorized_keys</span>
 <br/>
+<span>If you want to enable auto login locally, you need to copy id_rsa to /.ssh/ too.</span>
 </p>
